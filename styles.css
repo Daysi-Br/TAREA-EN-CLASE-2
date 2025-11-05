@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animación para títulos */
+@keyframes animar-titulo {
+    0% { color: #e74c3c; }
+    50% { color: #3498db; }
+    100% { color: #e74c3c; }
+}
+
+h1, h2 {
+    animation: animar-titulo 3s infinite;
+}
+
+/* Estilo para botones */
+.boton {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.boton:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Estilo para empleados */
+.empleado {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+.empleado img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    transition: all 0.5s;
+}
+
+.empleado img:hover {
+    transform: rotate(10deg);
+    border-color: #e74c3c;
+}
+
+/* Estilo para información de páginas */
+.pagina-info {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
